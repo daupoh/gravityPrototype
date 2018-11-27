@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gravityPrototype.models.Field
+namespace gravityPrototype.models.Rooms
 {
-    interface IField:IEntity
+    interface IRoom:IEntity
     {
-        void clearField();
-        void dropCubeByPlayer(uint row, uint column, IPlayer player);
-        
+        void enterRoom(string playerID, string roomID);
+        void createNewGame(string gameID);
     }
 }
