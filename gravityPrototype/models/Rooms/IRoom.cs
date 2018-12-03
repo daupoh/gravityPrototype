@@ -9,7 +9,8 @@ namespace gravityPrototype.models.Rooms
 {
     interface IRoom:IEntity
     {
-        void enterRoom(string playerID, string roomID);
-        void createNewGame(string gameID);
+        void enterRoom(string playerID);
+        string createNewGame(); //return game id
+        void makeAction(string playerID);
     }
 }
