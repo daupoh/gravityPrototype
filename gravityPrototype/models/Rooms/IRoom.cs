@@ -1,4 +1,5 @@
-﻿using gravityPrototype.models.Players;
+﻿using gravityPrototype.models.Games;
+using gravityPrototype.models.Players;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,15 @@ using System.Threading.Tasks;
 
 namespace gravityPrototype.models.Rooms
 {
-    interface IRoom:IEntity
+    interface IRoom : IEntity
     {
-        void enterRoom(string playerID);
+        uint playersMaxNumbers{get;}
+        uint playersCurrentNumbers { get; }
+        IGame getGameById(string gameID);
+
+        void enterRoom(string playerID);        
         string createNewGame(); //return game id
-        void makeAction(string playerID);
+        void playerLeftRoom(string playerID);
+        
     }
 }

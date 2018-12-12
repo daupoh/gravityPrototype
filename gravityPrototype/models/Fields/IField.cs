@@ -1,4 +1,6 @@
-﻿using gravityPrototype.models.Players;
+﻿using gravityPrototype.models.Actions;
+using gravityPrototype.models.CubeModels;
+using gravityPrototype.models.Players;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,8 @@ namespace gravityPrototype.models.Field
     interface IField:IEntity
     {
         void clearField();
-        void dropCubeByPlayer(uint row, uint column, IPlayer player);
+        void interactWithAction(IAction action);
+        ICube getCubeByIndexes(uint rowIndex, uint columnIndex);
         
     }
 }

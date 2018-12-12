@@ -51,15 +51,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Actions\IAction.cs" />
     <Compile Include="models\Cubes\ICube.cs" />
     <Compile Include="models\Cubes\NonActiveCubes\IBorderCube.cs" />
     <Compile Include="models\Cubes\NonActiveCubes\IEmptyCube.cs" />
     <Compile Include="models\Fields\IField.cs" />
+    <Compile Include="models\Games\IGame.cs" />
     <Compile Include="models\IEntity.cs" />
     <Compile Include="models\Players\IPlayer.cs" />
     <Compile Include="models\Rooms\ILocalRoom.cs" />
     <Compile Include="models\Rooms\IRoom.cs" />
-    <Compile Include="models\Server\IGameMaster.cs" />
+    <Compile Include="models\Client-Server\IGameMaster.cs" />
     <Compile Include="models\StructureCheckers\IStructureChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
