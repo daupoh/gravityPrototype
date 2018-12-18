@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace gravityPrototype.models.Actions
 {
-    interface IAction:IEntity
+    interface IActionWithCube
     {
-       
+        uint FieldsRowIndex { get; }
+        uint FieldsColumnIndex { get; }
+        string PlayersID { get; }
+        ICube Cube { get; }
     }
 }

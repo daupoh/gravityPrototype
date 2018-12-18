@@ -52,6 +52,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="models\Actions\IAction.cs" />
+    <Compile Include="models\Actions\IActionWithCube.cs" />
+    <Compile Include="models\Cubes\ActiveCubes\IActiveCube.cs" />
     <Compile Include="models\Cubes\ICube.cs" />
     <Compile Include="models\Cubes\NonActiveCubes\IBorderCube.cs" />
     <Compile Include="models\Cubes\NonActiveCubes\IEmptyCube.cs" />

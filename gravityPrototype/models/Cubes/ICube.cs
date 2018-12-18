@@ -8,13 +8,6 @@ namespace gravityPrototype.models.CubeModels
 {
     interface ICube:IEntity
     {
-        ICube getCubeTypeUp();
-        ICube getCubeoOUpRight();
-        ICube getCubeOnRight();
-        ICube getCubeOnDownRight();
-        ICube getCubeOnDown();
-        ICube getCubeOnDownLeft();
-        ICube getCubeOnLeft();
-        ICube getCubeOnUpLeft();
+        
     }
 }
