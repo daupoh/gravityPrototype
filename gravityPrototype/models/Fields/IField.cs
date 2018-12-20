@@ -14,7 +14,5 @@ namespace gravityPrototype.models.Field
         void clearField();
         void interactWithAction(IAction action);
         ICube getCubeByIndexes(uint rowIndex, uint columnIndex);
-        
-        
     }
 }

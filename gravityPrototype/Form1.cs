@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gravityPrototype.models.Server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace gravityPrototype
 {
     public partial class Form1 : Form
     {
+        IGameMaster m_pServer, m_pClient;
+
         public Form1()
         {
             InitializeComponent();
