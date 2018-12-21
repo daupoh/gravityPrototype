@@ -66,6 +66,7 @@
     <Compile Include="models\Rooms\ILocalRoom.cs" />
     <Compile Include="models\Rooms\IRoom.cs" />
     <Compile Include="models\Client-Server\IGameMaster.cs" />
+    <Compile Include="models\SCXmlHelper.cs" />
     <Compile Include="models\StructureCheckers\IStructureChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +92,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="models\ModelErrors.xml" />
+    <Content Include="models\StringConstants.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

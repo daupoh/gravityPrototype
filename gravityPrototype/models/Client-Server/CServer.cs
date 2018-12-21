@@ -9,7 +9,17 @@ namespace gravityPrototype.models.Client_Server
 {
     class CServer:IGameMaster
     {
-        string createNewPlayer();//return global player ID
+        IList<string> m_lsPlayersIDs;
+
+        public CServer()
+        {
+            initializePlayersList();
+        }
+
+        public string createNewPlayer()
+        {
+
+        }//return global player ID
         void changeName(string oldName, string newName, string PlayerID); //change playerID player name
 
         string createLocalRoom(string playerID, uint nPlayers); //create local room for nPlayers numbers and return Room ID
@@ -28,5 +38,12 @@ namespace gravityPrototype.models.Client_Server
         void giveUp(string playerID, string roomID, string gameID);
         string askToRestartGame(string playerID, string gameID, string roomID); //game with GameID in room with RoomID over and return new game GameID, or "No"
         void leaveRoom(string playerID, string roomID); //leave room with RoomID
+
+        //----------------------------
+        private void initializePlayersList()
+        {
+            m_lsPlayersIDs = new List<string>();
+        }
+        private string generateRandom
     }
 }
